@@ -15,7 +15,7 @@ export function printCart(pokemon): void {
   let remove: HTMLElement = <HTMLElement>document.createElement("a");
   remove.className = "btn-flat col s1";
   let removeButt: HTMLElement = <HTMLElement>document.createElement("i");
-  removeButt.className = "material-icons";
+  removeButt.className = "material-icons removeButt";
   removeButt.innerHTML = "remove_circle";
   removeButt.addEventListener("click", (e:Event)=>{
     removeFromCart(e);

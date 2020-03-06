@@ -7,6 +7,7 @@ export function adjustQuantity(e) {
   let itemName = itemNameElement.innerHTML;
   let quantityElement = cartItem.querySelector(".itemQuantity");
   let quantity: number = parseInt(quantityElement.innerHTML);
+  let remove:HTMLElement = cartItem.querySelector(".removeButt");
 
   if (target.innerHTML === "add") {
     quantity++;
@@ -14,7 +15,7 @@ export function adjustQuantity(e) {
   } else if (target.innerHTML === "remove") {
     quantity--;
     if (quantity === 0) {
-        console.log("call remove function");
+      remove.click();
     } else {
       updateStorage(false, itemName);
     }
