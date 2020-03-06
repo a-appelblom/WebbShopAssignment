@@ -1,0 +1,58 @@
+@import "../../node_modules/materialize-css/sass/materialize.scss";
+
+nav {
+    & div {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.2rem;
+
+    }
+}
+
+.quantity{
+    margin-left: 0 !important;
+}
+
+.sprite{
+    margin:0 auto;
+}
+
+.poke{
+    text-transform: capitalize;
+    text-align: center;
+    &Sprite{
+        margin-bottom: 0 !important;
+    }
+    &Name{
+        @extend .poke;
+        font-weight: bold;
+    }
+    &Price{
+        @extend .poke;
+    }
+}
+
+.cartItem{
+    text-transform: capitalize;
+    text-align: center;
+    margin-right: 1rem;
+
+    &Name{
+        @extend .cartItem;
+        font-weight: bold;
+    }
+
+    &Price{
+        @extend .cartItem;
+
+    }
+}
+
+#totalPrice{
+    font-weight: bold;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeMart</title>
+    <link rel="stylesheet" href="./src/sass/index.scss">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <a href="https://icons8.com/icon/45647/pokeballs">Pokeballs icon by Icons8</a> -->
+    <!-- <a href="https://icons8.com/icon/46007/pokebag">Pokebag icon by Icons8</a> -->
+    <!-- <a href="https://icons8.com/icon/63311/pokeball">Pokeball icon by Icons8</a> -->
+    <Header class="row">
+        <nav class="col s12">
+            <div class="nav-wrapper col s12">
+                <a id="pokeMart" href="./" class="brand-logo center"><img
+                        src="https://img.icons8.com/color/48/000000/pokebag.png"></a>
+                <ul id="pokeSearch" class="left">
+                    <li><input type="search" placeholder="Search Pokemon" onsubmit="Search()"></li>
+                </ul>
+                <ul id="pokeBalls" class="right">
+                    <li>
+                        <a class="waves-effect waves-light" href="#">
+                            <img src="https://img.icons8.com/color/48/000000/pokeballs.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </Header>
+    <div id="cart" class="container hide">
+        <div class="card-panel center">
+            <div id="items">
+
+            </div>
+            <div class="cartFooter">
+                <span id="totalPrice" class="right">
+
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div id="pokemonListings">
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="./src/main.ts"></script>
+</body>
+
+</html>
